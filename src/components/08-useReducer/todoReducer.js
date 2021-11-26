@@ -19,6 +19,6 @@ export const todoReducer = (state = [], action) => {
         todo.id === action.payload ? { ...todo, done: !todo.done } : todo
       );
     default:
-      return state;
+      return state; //[]
   }
 };
