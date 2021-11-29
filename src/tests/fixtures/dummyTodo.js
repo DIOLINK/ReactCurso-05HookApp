@@ -1,8 +1,8 @@
 export const dummyTodo = [
   {
     id: 1,
-    desc: 'Hacer la compra',
+    description: 'Hacer la compra',
     done: false,
   },
-  { id: 2, desc: 'Pasear al perro', done: false },
+  { id: 2, description: 'Pasear al perro', done: false },
 ];
