@@ -6,7 +6,7 @@ const TodoForm = ({ handleAddTodo }) => {
   const [{ description }, handleInputChange, resetForm] = useForm({
     description: '',
   });
-  const handleSutmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (description.trim().length <= 1) {
       return;
@@ -21,7 +21,7 @@ const TodoForm = ({ handleAddTodo }) => {
     resetForm();
   };
   return (
-    <form onSubmit={handleSutmit}>
+    <form onSubmit={handleSubmit}>
       <div className="d-grid gap-2">
         <input
           className="form-control form-control-lg"
